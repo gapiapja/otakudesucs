@@ -13,7 +13,7 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 
 class OtakudesuProvider : MainAPI() {
-    override var mainUrl = "https://otakudesu.wiki"
+    override var mainUrl = "https://otakudesu.cloud"
     override var name = "Otakudesu"
     override val hasMainPage = true
     override var lang = "id"
@@ -48,8 +48,8 @@ class OtakudesuProvider : MainAPI() {
     }
 
     override val mainPage = mainPageOf(
-        "$mainUrl/ongoing-anime/page/" to "Anime Ongoing",
-        "$mainUrl/complete-anime/page/" to "Anime Completed"
+        "$mainUrl/ongoing-anime/" to "Anime Ongoing",
+        "$mainUrl/complete-anime/" to "Anime Completed"
     )
 
     override suspend fun getMainPage(
