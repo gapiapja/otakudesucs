@@ -48,8 +48,8 @@ class OtakudesuProvider : MainAPI() {
     }
 
     override val mainPage = mainPageOf(
-        "$mainUrl/ongoing-anime/" to "Anime Ongoing",
-        "$mainUrl/complete-anime/" to "Anime Completed"
+        "$mainUrl/ongoing-anime/page/" to "Anime Ongoing",
+        "$mainUrl/complete-anime/page/" to "Anime Completed"
     )
 
     override suspend fun getMainPage(
